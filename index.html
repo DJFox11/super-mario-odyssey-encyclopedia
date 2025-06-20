@@ -1,107 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Odyssey Archive — your complete encyclopedia of Super Mario Odyssey" />
+  <title>Odyssey Archive</title>
+
+  <!-- Styles & scripts -->
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js" defer></script>
 </head>
+
 <body>
-    <h1>Odyssey Archive</h1>
-    <h2><i>A complete encyclopedia of Super Mario Odyssey</i></h2></p>
 
-    <p>Welcome to <i>Odyssey Archive</i> &mdash; your definitive guide to the world of <b>Super Mario Odyssey</b>. From characters and enemies to items and kingdoms, everything you need to know about Mario's globe-trotting adventure is here in one place. Whether you're a casual fan or a dedicated completionist, there's something here for you.</p>
+  <!-- ───────  HERO  ─────── -->
+  <header class="hero">
+    <h1 class="logo">Odyssey&nbsp;Archive</h1>
+    <p class="tagline">
+      <em>The all-in-one encyclopedia for <strong>Super Mario Odyssey</strong></em>
+    </p>
 
-    <hr>
+    <!-- Compact site nav ↓ -->
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#playable">Playable</a></li>
+        <li><a href="#npc">NPCs</a></li>
+        <li><a href="#enemies">Enemies</a></li>
+        <li><a href="#bosses">Bosses</a></li>
+        <li><a href="#items">Items</a></li>
+        <li><a href="#kingdoms">Kingdoms</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h2>👤 Playable Characters</h2>
-    <h3>The heroes of the journey.</h3>
-    <p>Meet the playable characters who take centre stage in Super Mario Odyssey. From the iconic plumber himself to his trusty companion, Cappy, these characters are at the heart of every adventure.</p>
-    <ul>
-        <li>Mario</li>
-        <li>Cappy</li>
-    </ul>
+  <!-- ───────  MAIN CONTENT  ─────── -->
+  <main id="content">
+    <!-- Each section keeps its original ID for deep-linking -->
+    <section id="playable">
+      <h2>👤 Playable Characters</h2>
+      <p class="section-lead">The heroes of the journey.</p>
 
-    <hr>
+      <ul class="grid">
+        <li class="card">
+          <figure>
+            <img src="/images/mario.png" alt="Mario" />
+            <figcaption>Mario</figcaption>
+          </figure>
+        </li>
+        <li class="card">
+          <figure>
+            <img src="/images/cappy.png" alt="Cappy" />
+            <figcaption>Cappy</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-    <h2>👥 Non-Playable Characters</h2>
-    <h3>Friends, locals, and curious creatures.</h3>
-    <p>The kingdoms of Super Mario Odyssey are filled with charming NPCs &mdash; from friendly Tostarenans to mysterious Lochladies and fan-favourites like Luigi and Peach. Discover every character you'll meet along the way.</p>
-    <ul>
-        <li>Princess Peach</li>
-        <li>Tiara</li>
-        <li>Tostarenans</li>
-        <li>Lochladies</li>
-        <li>Mayor Pauline</li>
-        <li>Yoshi</li>
-        <li>Luigi</li>
-        <li><a href="#">[View All →]</a></li>
-    </ul>
+    <section id="npc">
+      <h2>👥 Non-Playable Characters</h2>
+      <p class="section-lead">Friends, locals, and curious creatures.</p>
 
-    <hr>
+      <ul class="grid">
+        <li class="card"><figure><img src="/images/peach.png" alt="Princess Peach" /><figcaption>Princess Peach</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/tiara.png"  alt="Tiara" /><figcaption>Tiara</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/tostarenans.png" alt="Tostarenans" /><figcaption>Tostarenans</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/lochladies.png"  alt="Lochladies" /><figcaption>Lochladies</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/pauline.png" alt="Mayor Pauline" /><figcaption>Mayor Pauline</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/yoshi.png"   alt="Yoshi" /><figcaption>Yoshi</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/luigi.png"   alt="Luigi" /><figcaption>Luigi</figcaption></figure></li>
+      </ul>
+      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+    </section>
 
-    <h2>☠️ Enemies</h2>
-    <h3>Creatures, critters, and chaos.</h3>
-    <p>Not everything in Odyssey is friendly! Learn about the foes Mario faces across each kingdom &mdash; from the classic Goombas to Bullet Bills to kingdom-specific enemies like Burrbos and Komboos.</p>
-    <ul>
-        <li>Goomba</li>
-        <li>Bullet Bill</li>
-        <li>T-Rex</li>
-        <li>Tropical Wiggler</li>
-        <li>Bitefrost</li>
-        <li><a href="#">[View All →]</a></li>
-    </ul>
+    <section id="enemies">
+      <h2>☠️ Enemies</h2>
+      <p class="section-lead">Creatures, critters, and chaos.</p>
 
-    <hr>
+      <ul class="grid">
+        <li class="card"><figure><img src="/images/goomba.png"  alt="Goomba" /><figcaption>Goomba</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/bulletbill.png" alt="Bullet&nbsp;Bill" /><figcaption>Bullet Bill</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/trex.png"    alt="T-Rex" /><figcaption>T-Rex</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/tropicalwiggler.png" alt="Tropical Wiggler" /><figcaption>Tropical Wiggler</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/cheepcheep.png" alt="Cheep Cheep" /><figcaption>Cheep Cheep</figcaption></figure></li>
+      </ul>
+      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+    </section>
 
-    <h2>👑 Bosses</h2>
-    <h3>The big baddies.</h3>
-    <p>Super Mario Odyssey featuers some of the most creative boss fights in the series. Battle the Broodals, clash with mechanical monstrosities, and take on the final showdown with Bowser himself.</p>
-    <ul>
-        <li>Tooper (Broodal)</li>
-        <li>Torkdrift (Wooded Kingdom)</li>
-        <li>Mechawiggler (Metro Kingdom)</li>
-        <li>Ruined Dragon</li>
-        <li>Bowser</li>
-        <li><a href="#">[View All →]</a></li>
-    </ul>
+    <section id="bosses">
+      <h2>👑 Bosses</h2>
+      <p class="section-lead">The big baddies.</p>
 
-    <hr>
+      <ul class="grid">
+        <li class="card"><figure><img src="/images/topper.png" alt="Topper" /><figcaption>Topper</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/hariet.png" alt="Hariet" /><figcaption>Hariet</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/rango.png"  alt="Rango" /><figcaption>Rango</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/spewart.png" alt="Spewart" /><figcaption>Spewart</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/bowser.png" alt="Bowser" /><figcaption>Bowser</figcaption></figure></li>
+      </ul>
+      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+    </section>
 
-    <h2>🎁 Items &amp; Collectibles</h2>
-    <h3>Everything you can find, collect, or use.</h3>
-    <p>From Power Moons and Coins to Seeds and Notes, Odyssey is packed with items to discover. Explore their uses, locations and fun facts in this complete collection.</p>
-    <ul>
-        <li>Power Moon</li>
-        <li>Moon Shard</li>
-        <li>Coins &amp; Regional Coins</li>
-        <li>Hearts &amp; Life-Up Hearts</li>
-        <li>Key</li>
-        <li>Pauline's Items</li>
-        <li><a href="#">[View All →]</a></li>
-    </ul>
+    <section id="items">
+      <h2>🎁 Items & Collectibles</h2>
+      <p class="section-lead">Everything you can find, collect, or use.</p>
 
-    <hr>
+      <ul class="grid">
+        <li class="card"><figure><img src="/images/powermoon.png"    alt="Power Moon" /><figcaption>Power Moon</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/coin.png"         alt="Coins" /><figcaption>Coins</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/regionalcoins.png" alt="Regional Coins" /><figcaption>Regional Coins</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/lifeupheart.png"  alt="Life-Up Heart" /><figcaption>Life-Up Heart</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/key.png"          alt="Key" /><figcaption>Key</figcaption></figure></li>
+        <li class="card"><figure><img src="/images/fruit.png"        alt="Fruit" /><figcaption>Fruit</figcaption></figure></li>
+      </ul>
+      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+    </section>
 
-    <h2>🌏 Kingdoms</h2>
-    <h3>Explore the world, one kingdom at a time.</h3>
-    <p>Journey through 17 unique kingdoms, each with its own culture, challenges, and secrets. Get to know every location Mario visits &mdash; from the bustling streets of New Donk City and the mysterious depths of Crumbleden.</p>
-    <ul>
-        <li>Cap Kingdom - Bonneton</li>
-        <li>Cascade Kingdom - Fossil Falls</li>
-        <li>Metro Kingdom - New Donk City</li>
-        <li>Luncheon Kingdom - Mount Volbono</li>
-        <li>Moon Kingdom - Honeylune Ridge</li>
-        <li><a href="#">[View All →]</a></li>
-    </ul>
+    <section id="kingdoms">
+      <h2>🌏 Kingdoms</h2>
+      <p class="section-lead">Explore the world, one kingdom at a time.</p>
 
-    <hr>
+      <ul class="grid">
+        <li class="card"><figure><img src="https://placehold.co/360x360?text=Cap"        alt="Cap Kingdom" /><figcaption>Cap Kingdom — Bonneton</figcaption></figure></li>
+        <li class="card"><figure><img src="https://placehold.co/360x360?text=Cascade"    alt="Cascade Kingdom" /><figcaption>Cascade Kingdom — Fossil Falls</figcaption></figure></li>
+        <li class="card"><figure><img src="https://placehold.co/360x360?text=Metro"      alt="Metro Kingdom" /><figcaption>Metro Kingdom — New Donk City</figcaption></figure></li>
+        <li class="card"><figure><img src="https://placehold.co/360x360?text=Luncheon"   alt="Luncheon Kingdom" /><figcaption>Luncheon Kingdom — Mount Volbono</figcaption></figure></li>
+        <li class="card"><figure><img src="https://placehold.co/360x360?text=Moon"       alt="Moon Kingdom" /><figcaption>Moon Kingdom — Honeylune Ridge</figcaption></figure></li>
+      </ul>
+      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+    </section>
+  </main>
 
-    <footer>
-        <p style="text-align: center; font-size: 0.9em;">
-            Made by DJFox11 - 2025<br>
-            <em>This site is a fan-made project in early development. All character names and game content belong to Nintendo.</em>
-        </p>
-    </footer>
+  <!-- ───────  FOOTER  ─────── -->
+  <footer>
+    <p>Made by DJFox11 — 2025</p>
+    <p><em>This fan-made project is in early development. All characters and content © Nintendo.</em></p>
+  </footer>
 </body>
 </html>
