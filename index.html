@@ -1,140 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-        content="Odyssey Archive — your complete encyclopedia of Super Mario Odyssey" />
-  <title>Odyssey Archive</title>
-
-  <!-- Styles & scripts -->
-  <link rel="stylesheet" href="style.css" />
-  <script type="module" src="script.js" defer></script>
-</head>
-
-<body>
-
-  <!-- ───────  HERO  ─────── -->
-  <header class="hero">
-    <h1 class="logo">Odyssey&nbsp;Archive</h1>
-    <p class="tagline">
-      <em>The all-in-one encyclopedia for <strong>Super Mario Odyssey</strong></em>
-    </p>
-
-    <!-- Compact site nav ↓ -->
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="#playable">Playable</a></li>
-        <li><a href="#npc">NPCs</a></li>
-        <li><a href="#enemies">Enemies</a></li>
-        <li><a href="#bosses">Bosses</a></li>
-        <li><a href="#items">Items</a></li>
-        <li><a href="#kingdoms">Kingdoms</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ───────  MAIN CONTENT  ─────── -->
-  <main id="content">
-    <!-- Each section keeps its original ID for deep-linking -->
-    <section id="playable">
-      <h2>👤 Playable Characters</h2>
-      <p class="section-lead">The heroes of the journey.</p>
-
-      <ul class="grid">
-        <li class="card">
-          <figure>
-            <img src="/images/mario.png" alt="Mario" />
-            <figcaption>Mario</figcaption>
-          </figure>
-        </li>
-        <li class="card">
-          <figure>
-            <img src="/images/cappy.png" alt="Cappy" />
-            <figcaption>Cappy</figcaption>
-          </figure>
-        </li>
-      </ul>
-    </section>
-
-    <section id="npc">
-      <h2>👥 Non-Playable Characters</h2>
-      <p class="section-lead">Friends, locals, and curious creatures.</p>
-
-      <ul class="grid">
-        <li class="card"><figure><img src="/images/peach.png" alt="Princess Peach" /><figcaption>Princess Peach</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/tiara.png"  alt="Tiara" /><figcaption>Tiara</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/tostarenans.png" alt="Tostarenans" /><figcaption>Tostarenans</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/lochladies.png"  alt="Lochladies" /><figcaption>Lochladies</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/pauline.png" alt="Mayor Pauline" /><figcaption>Mayor Pauline</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/yoshi.png"   alt="Yoshi" /><figcaption>Yoshi</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/luigi.png"   alt="Luigi" /><figcaption>Luigi</figcaption></figure></li>
-      </ul>
-      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
-    </section>
-
-    <section id="enemies">
-      <h2>☠️ Enemies</h2>
-      <p class="section-lead">Creatures, critters, and chaos.</p>
-
-      <ul class="grid">
-        <li class="card"><figure><img src="/images/goomba.png"  alt="Goomba" /><figcaption>Goomba</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/bulletbill.png" alt="Bullet&nbsp;Bill" /><figcaption>Bullet Bill</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/trex.png"    alt="T-Rex" /><figcaption>T-Rex</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/tropicalwiggler.png" alt="Tropical Wiggler" /><figcaption>Tropical Wiggler</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/cheepcheep.png" alt="Cheep Cheep" /><figcaption>Cheep Cheep</figcaption></figure></li>
-      </ul>
-      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
-    </section>
-
-    <section id="bosses">
-      <h2>👑 Bosses</h2>
-      <p class="section-lead">The big baddies.</p>
-
-      <ul class="grid">
-        <li class="card"><figure><img src="/images/topper.png" alt="Topper" /><figcaption>Topper</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/hariet.png" alt="Hariet" /><figcaption>Hariet</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/rango.png"  alt="Rango" /><figcaption>Rango</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/spewart.png" alt="Spewart" /><figcaption>Spewart</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/bowser.png" alt="Bowser" /><figcaption>Bowser</figcaption></figure></li>
-      </ul>
-      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
-    </section>
-
-    <section id="items">
-      <h2>🎁 Items & Collectibles</h2>
-      <p class="section-lead">Everything you can find, collect, or use.</p>
-
-      <ul class="grid">
-        <li class="card"><figure><img src="/images/powermoon.png"    alt="Power Moon" /><figcaption>Power Moon</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/coin.png"         alt="Coins" /><figcaption>Coins</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/regionalcoins.png" alt="Regional Coins" /><figcaption>Regional Coins</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/lifeupheart.png"  alt="Life-Up Heart" /><figcaption>Life-Up Heart</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/key.png"          alt="Key" /><figcaption>Key</figcaption></figure></li>
-        <li class="card"><figure><img src="/images/fruit.png"        alt="Fruit" /><figcaption>Fruit</figcaption></figure></li>
-      </ul>
-      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
-    </section>
-
-    <section id="kingdoms">
-      <h2>🌏 Kingdoms</h2>
-      <p class="section-lead">Explore the world, one kingdom at a time.</p>
-
-      <ul class="grid">
-        <li class="card"><figure><img src="https://placehold.co/360x360?text=Cap"        alt="Cap Kingdom" /><figcaption>Cap Kingdom — Bonneton</figcaption></figure></li>
-        <li class="card"><figure><img src="https://placehold.co/360x360?text=Cascade"    alt="Cascade Kingdom" /><figcaption>Cascade Kingdom — Fossil Falls</figcaption></figure></li>
-        <li class="card"><figure><img src="https://placehold.co/360x360?text=Metro"      alt="Metro Kingdom" /><figcaption>Metro Kingdom — New Donk City</figcaption></figure></li>
-        <li class="card"><figure><img src="https://placehold.co/360x360?text=Luncheon"   alt="Luncheon Kingdom" /><figcaption>Luncheon Kingdom — Mount Volbono</figcaption></figure></li>
-        <li class="card"><figure><img src="https://placehold.co/360x360?text=Moon"       alt="Moon Kingdom" /><figcaption>Moon Kingdom — Honeylune Ridge</figcaption></figure></li>
-      </ul>
-      <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
-    </section>
-  </main>
-
-  <!-- ───────  FOOTER  ─────── -->
-  <footer>
-    <p>Made by DJFox11 — 2025</p>
-    <p><em>This fan-made project is in early development. All characters and content © Nintendo.</em></p>
-  </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="Odyssey Archive — your complete encyclopedia of Super Mario Odyssey" />
+        <title>Odyssey Archive</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="hero">
+            <h1 class="logo">Odyssey&nbsp;Archive</h1>
+            <p class="tagline">
+                <em>The all-in-one encyclopedia for <strong>Super Mario Odyssey</strong></em>
+            </p>
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="#playable">Playable</a></li>
+                    <li><a href="#npc">NPCs</a></li>
+                    <li><a href="#enemies">Enemies</a></li>
+                    <li><a href="#bosses">Bosses</a></li>
+                    <li><a href="#items">Items</a></li>
+                    <li><a href="#kingdoms">Kingdoms</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content">
+            <section id="playable">
+                <h2>👤 Playable Characters</h2>
+                <p class="section-lead">The heroes of the journey.</p>
+                <ul class="grid">
+                    <li class="card">
+                        <figure>
+                            <img src="/images/mario.png" alt="Mario" />
+                            <figcaption>Mario</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/cappy.png" alt="Cappy" />
+                            <figcaption>Cappy</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section id="npc">
+                <h2>👥 Non-Playable Characters</h2>
+                <p class="section-lead">Friends, locals, and curious creatures.</p>
+                <ul class="grid">
+                    <li class="card">
+                        <figure>
+                            <img src="/images/peach.png" alt="Princess Peach" />
+                            <figcaption>Princess Peach</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/tiara.png"  alt="Tiara" />
+                            <figcaption>Tiara</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/tostarenans.png" alt="Tostarenans" />
+                            <figcaption>Tostarenans</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/lochladies.png"  alt="Lochladies" />
+                            <figcaption>Lochladies</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/pauline.png" alt="Mayor Pauline" />
+                            <figcaption>Mayor Pauline</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/yoshi.png"   alt="Yoshi" />
+                            <figcaption>Yoshi</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/luigi.png"   alt="Luigi" />
+                            <figcaption>Luigi</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+            </section>
+            <section id="enemies">
+                <h2>☠️ Enemies</h2>
+                <p class="section-lead">Creatures, critters, and chaos.</p>
+                <ul class="grid">
+                    <li class="card">
+                        <figure>
+                            <img src="/images/goomba.png"  alt="Goomba" />
+                            <figcaption>Goomba</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/bulletbill.png" alt="Bullet&nbsp;Bill" />
+                            <figcaption>Bullet Bill</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/trex.png"    alt="T-Rex" />
+                            <figcaption>T-Rex</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/tropicalwiggler.png" alt="Tropical Wiggler" />
+                            <figcaption>Tropical Wiggler</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/cheepcheep.png" alt="Cheep Cheep" />
+                            <figcaption>Cheep Cheep</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+            </section>
+            <section id="bosses">
+                <h2>👑 Bosses</h2>
+                <p class="section-lead">The big baddies.</p>
+                <ul class="grid">
+                    <li class="card">
+                        <figure>
+                            <img src="/images/topper.png" alt="Topper" />
+                            <figcaption>Topper</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/hariet.png" alt="Hariet" />
+                            <figcaption>Hariet</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/rango.png"  alt="Rango" />
+                            <figcaption>Rango</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/spewart.png" alt="Spewart" />
+                            <figcaption>Spewart</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/bowser.png" alt="Bowser" />
+                            <figcaption>Bowser</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+            </section>
+            <section id="items">
+                <h2>🎁 Items & Collectibles</h2>
+                <p class="section-lead">Everything you can find, collect, or use.</p>
+                <ul class="grid">
+                    <li class="card">
+                        <figure>
+                            <img src="/images/powermoon.png"    alt="Power Moon" />
+                            <figcaption>Power Moon</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/coin.png"         alt="Coins" />
+                            <figcaption>Coins</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/regionalcoins.png" alt="Regional Coins" />
+                            <figcaption>Regional Coins</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/lifeupheart.png"  alt="Life-Up Heart" />
+                            <figcaption>Life-Up Heart</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/key.png"          alt="Key" />
+                            <figcaption>Key</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="/images/fruit.png"        alt="Fruit" />
+                            <figcaption>Fruit</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+            </section>
+            <section id="kingdoms">
+                <h2>🌏 Kingdoms</h2>
+                <p class="section-lead">Explore the world, one kingdom at a time.</p>
+                <ul class="grid">
+                    <li class="card">
+                        <figure>
+                            <img src="https://placehold.co/360x360?text=Cap"        alt="Cap Kingdom" />
+                            <figcaption>Cap Kingdom — Bonneton</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="https://placehold.co/360x360?text=Cascade"    alt="Cascade Kingdom" />
+                            <figcaption>Cascade Kingdom — Fossil Falls</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="https://placehold.co/360x360?text=Metro"      alt="Metro Kingdom" />
+                            <figcaption>Metro Kingdom — New Donk City</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="https://placehold.co/360x360?text=Luncheon"   alt="Luncheon Kingdom" />
+                            <figcaption>Luncheon Kingdom — Mount Volbono</figcaption>
+                        </figure>
+                    </li>
+                    <li class="card">
+                        <figure>
+                            <img src="https://placehold.co/360x360?text=Moon"       alt="Moon Kingdom" />
+                            <figcaption>Moon Kingdom — Honeylune Ridge</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <p class="view-all"><a href="#">[View&nbsp;All&nbsp;→]</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>Made by DJFox11 — 2025</p>
+            <p><em>This fan-made project is in early development. All characters and content © Nintendo.</em></p>
+        </footer>
+    </body>
 </html>
