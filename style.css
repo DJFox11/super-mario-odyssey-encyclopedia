@@ -1,0 +1,18 @@
+body {
+    margin: 40px auto;
+    max-width: 850px;
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #202020;
+    color: #fff;
+    padding: 0 20px;
+    font-family: system-ui;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: #0077b6;
+}
